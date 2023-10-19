@@ -1,24 +1,18 @@
-# README
+# Ruby on Rails Queijos App
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is an app to help my mom with her newly cheese business.
 
-Things you may want to cover:
+## Getting started
 
-* Ruby version
+To get started with the app, clone the repo and then install the needed gems:
 
-* System dependencies
+```
+$ gem install bundler -v 2.3.14
+$ bundle _2.3.14_ config set --local without 'production'
+$ bundle _2.3.14_ install
+```
 
-* Configuration
+```
+$ rails server
+```
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...

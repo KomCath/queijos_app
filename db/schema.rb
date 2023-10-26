@@ -15,10 +15,10 @@ ActiveRecord::Schema[7.0].define(version: 2023_10_26_201033) do
     t.string "name", null: false
     t.text "description"
     t.integer "quantity"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
     t.integer "price_cents", default: 0, null: false
     t.string "price_currency", default: "BRL", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
 end

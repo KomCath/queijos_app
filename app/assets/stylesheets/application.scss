@@ -54,3 +54,33 @@ p {
   font-size: 1.1em;
   line-height: 1.7em;
 }
+
+#smallImage {
+  height: 240px;
+  display: flex;
+  background-size: cover;
+  background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), image-url('TAB_1596');
+}
+
+.banner {
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  background-size: cover;
+  background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), image-url('TAB_1596');
+  h1 {
+    color: white;
+    font-weight: bold;
+    font-size: 50px;
+  }
+}
+
+.container-fluid {
+  padding-top: 23px;
+}
+
+.jumbotron {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}

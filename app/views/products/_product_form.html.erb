@@ -1,0 +1,6 @@
+<%= simple_form_for @product do |f| %>
+  <%= f.input :name, label: "Nome do produto", required: true %>
+  <%= f.input :description, label: "Descrição do produto" %>
+  <%= f.input :price_cents, label: "Preço do produto" %>
+  <%= f.submit "Salve produto", class: "btn btn-flat"%>
+<% end %>

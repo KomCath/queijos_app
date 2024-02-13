@@ -70,4 +70,6 @@ Rails.application.configure do
 
   # Allow connections to local server on cloud IDE.
   config.hosts.clear
+
+  Money.locale_backend = :i18n
 end

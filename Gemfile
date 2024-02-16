@@ -16,6 +16,7 @@ gem "jbuilder",        "2.11.5"
 gem "bootsnap",        "1.12.0", require: false
 gem "bootstrap-sass"
 gem "simple_form"
+gem "devise"
 
 group :development, :test do
   gem "factory_bot_rails"

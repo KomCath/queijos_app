@@ -16,6 +16,7 @@ gem "jbuilder",        "2.11.5"
 gem "bootsnap",        "1.12.0", require: false
 gem "bootstrap-sass"
 gem "simple_form"
+gem "devise"
 
 group :development, :test do
   gem "factory_bot_rails"
@@ -30,6 +31,9 @@ group :development do
   gem "web-console", "4.2.0"
 end
 
+group :test do
+  gem "shoulda-matchers", "~> 6.0"
+end
 
 group :production do
   # gem "pg", "1.3.5"

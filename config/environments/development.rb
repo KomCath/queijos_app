@@ -71,5 +71,9 @@ Rails.application.configure do
   # Allow connections to local server on cloud IDE.
   config.hosts.clear
 
+  # Allow money-rails to perform without deprecation warnings.
   Money.locale_backend = :i18n
+
+  # Devise defined default url
+  config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
 end

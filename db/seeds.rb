@@ -1,9 +1,17 @@
 puts "\n🌱 Seeding..."
 
-puts "\nNow seeding Products 🧀\n\n"
+puts "\nNow seeding Products 🧀\n"
 
 FactoryBot.create_list(:product, 10)
 
-puts "Finished Products 🌳\n\n"
+puts "\nFinished Products 🌳\n"
 
-puts "Done!🤙"
+puts "\nNow seeding Users 🧌\n"
+
+FactoryBot.create_list(:user, 5, admin: false)
+
+FactoryBot.create(:user, admin: true)
+
+puts "\nFinished Users 🌳\n"
+
+puts "\nDone!🤙"

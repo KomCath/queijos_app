@@ -1,6 +1,8 @@
 <% provide(:title, "Produtos") %>
 <div class="row center">
-  <h4><%= link_to "Adicione produtos", new_product_path %></h4>
+  <% if user_signed_in? && current_user.admin? %>
+    <h4><%= link_to "Adicione produtos", new_product_path %></h4>
+  <% end %>
   <h1>Quem quer queijo?</h1>
   <ul>
     <%= render @products %>

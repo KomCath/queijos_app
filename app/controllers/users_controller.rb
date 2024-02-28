@@ -10,10 +10,8 @@ class UsersController < ApplicationController
 
   def update
     if @user.update(user_params)
-      flash[:success] = "Yay! Cliente editado."
       redirect_to users_path
     else
-      flash[:danger] = "Nay! Cliente não foi editado."
       render "edit"
     end
   end

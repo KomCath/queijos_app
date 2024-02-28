@@ -13,10 +13,8 @@ class ProductsController < ApplicationController
     @product = Product.new(product_params)
 
     if @product.save
-      flash[:success] = "Yay!"
       redirect_to products_path
     else
-      flash[:danger] = "Nay!"
       render 'new'
     end
   end
@@ -25,10 +23,8 @@ class ProductsController < ApplicationController
 
   def update
     if @product.update(product_params)
-      flash[:success] = "Yay! Product updated."
       redirect_to products_path
     else
-      flash[:danger] = "Nay! Product didn't update."
       render "edit"
     end
   end

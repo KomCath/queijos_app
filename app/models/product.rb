@@ -14,5 +14,5 @@
 class Product < ApplicationRecord
   monetize :price_cents
 
-  validates :name, presence: true, unique: true
+  validates :name, presence: true, uniqueness: true
 end

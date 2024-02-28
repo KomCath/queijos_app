@@ -13,6 +13,8 @@ RSpec.describe Product, type: :model do
     end
 
     context "uniqueness" do
+      subject { create(:product) }
+
       it { is_expected.to validate_uniqueness_of(:name) }
     end
   end

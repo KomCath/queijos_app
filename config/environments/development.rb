@@ -73,6 +73,7 @@ Rails.application.configure do
 
   # Allow money-rails to perform without deprecation warnings.
   Money.locale_backend = :i18n
+  Money.rounding_mode = BigDecimal::ROUND_HALF_UP
 
   # Devise defined default url
   config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }

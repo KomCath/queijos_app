@@ -14,19 +14,19 @@ RSpec.describe User, type: :model do
        }
 
     context "presence" do
-      it { should validate_presence_of(:email).
+      it { is_expected.to validate_presence_of(:email).
            on(:create).
            with_message("can't be blank")
          }
 
-      it { should validate_presence_of(:password).
-           on(:create).
-           with_message("can't be blank")
-         }
+      it { is_expected.to validate_presence_of(:password).
+         on(:create).
+         with_message("can't be blank")
+       }
     end
 
     context "uniqueness" do
-      it { should validate_uniqueness_of(:email).
+      it { is_expected.to validate_uniqueness_of(:email).
            on(:create).
            with_message("has already been taken").
            ignoring_case_sensitivity

@@ -1,0 +1,14 @@
+<% provide(:title, "Editar Cliente") %>
+<div class="row">
+  <h4><%= link_to "← Lista de clientes", users_path %></h4>
+  <div class="col-md-6 col-md-offset-3">
+    <%= simple_form_for @user do |f| %>
+      <%= f.input :first_name, label: "Nome" %>
+      <%= f.input :last_name, label: "Sobrenome" %>
+      <%= f.input :phone_number, label: "Telefone" %>
+      <%= f.input :line1, label: "Endereço de entrega" %>
+      <%= f.input :neighborhood, label: "Bairro" %>
+      <%= f.submit "Salvar", class: "btn btn-flat"%>
+    <% end %>
+  </div>
+</div>
